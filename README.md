@@ -1,12 +1,84 @@
-# React + Vite
+# GitHub Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GitHub Finder is a modern web application built with React and Vite. It allows users to search for GitHub profiles and view detailed information about them.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these instructions to set up the project on your local machine.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/githubfinder.git
+   cd githubfinder
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Setting Up Environment Variables
+
+This project requires a `.env` file to store sensitive information such as API keys. Since `.env` files are not pushed to the repository, you need to create one manually.
+
+1. Create a `.env` file in the root directory:
+
+   ```bash
+   touch .env
+   ```
+
+2. Add the following variables to the `.env` file:
+
+   ```
+   VITE_GITHUB_CLIENT_ID=your_github_client_id
+   VITE_GITHUB_CLIENT_SECRET=your_github_client_secret
+   ```
+
+   Replace `your_github_client_id` and `your_github_client_secret` with your actual GitHub API credentials. You can obtain these by creating an OAuth app in your GitHub account.
+
+### Running the Application
+
+To start the development server, run:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173` (default Vite port).
+
+### Building for Production
+
+To build the application for production, run:
+
+```bash
+npm run build
+```
+
+The production-ready files will be generated in the `dist` directory.
+
+### Previewing the Production Build
+
+To preview the production build locally, run:
+
+```bash
+npm run preview
+```
+
+This will serve the production build on a local server.
+
+## Acknowledgments
+
+- This project uses the [GitHub API](https://docs.github.com/en/rest).
+- Built with [React](https://reactjs.org/) and [Vite](https://vitejs.dev/).
+
+Feel free to contribute to this project by submitting issues or pull requests!
