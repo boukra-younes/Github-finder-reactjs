@@ -18,8 +18,8 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/githubfinder.git
-   cd githubfinder
+   git clone https://github.com/boukra-younes/Github-finder-reactjs
+   cd Github-finder-reactjs
    ```
 
 2. Install dependencies:
@@ -39,12 +39,12 @@ This project requires a `.env` file to store sensitive information such as API k
 
 2. Add the following variables to the `.env` file:
 
-   ```
-   VITE_GITHUB_CLIENT_ID=your_github_client_id
-   VITE_GITHUB_CLIENT_SECRET=your_github_client_secret
+   ```   
+   VITE_GITHUB_TOKEN="your-github-api-token"
+   VITE_GITHUB_URL="https://api.github.com"
    ```
 
-   Replace `your_github_client_id` and `your_github_client_secret` with your actual GitHub API credentials. You can obtain these by creating an OAuth app in your GitHub account.
+   Replace `your-github-api-token ` with your actual GitHub API 
 
 ### Running the Application
 
@@ -81,4 +81,3 @@ This will serve the production build on a local server.
 - This project uses the [GitHub API](https://docs.github.com/en/rest).
 - Built with [React](https://reactjs.org/) and [Vite](https://vitejs.dev/).
 
-Feel free to contribute to this project by submitting issues or pull requests!
